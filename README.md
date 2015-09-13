@@ -36,14 +36,14 @@ You could skip this section but I wanted to show you some of the tools I use in 
 Instructions:
 ---
 1. Clone this project to your machine:
-```
-git clone https://github.com/josedulanto/rails-boilerplate && cd rails-boilerplate
-```
+  ```
+  git clone https://github.com/josedulanto/rails-boilerplate && cd rails-boilerplate
+  ```
 2. Run bundler with `bundle install`
 3. Create the file `config/application.yml` and save it with the proper values according to your setup:
-```
-REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
-```
+  ```
+  REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
+  ```
 4. Configure your database settings in `config/database.yml` and then run `bundle exec rake db:setup`
 5. If you have [Anvil](http://anvilformac.com/) or [Pow](http://pow.cx/) then create the server and navigate to `http://rails-boilerplate.dev/` (or whatever domain you configured) or run `bundle exec rails s`
 6. In another console/terminal run Guard with `bundle exec guard` and if you installed the LiveReload Chrome extension then hit the `Enable LiveReload` button (you should have it in your toolbar next to the URL bar).
