@@ -45,4 +45,4 @@ Instructions:
 6. If you have [Anvil](http://anvilformac.com/) or [Pow](http://pow.cx/) then create the server and navigate to `http://rails-boilerplate.dev/` (or whatever domain you configured) or run `bundle exec rails s` and navigate to `http://localhost:3000/`
 7. In another console/terminal run Guard with `bundle exec guard` and if you installed the LiveReload Chrome extension then hit the `Enable LiveReload` button (you should have it in your toolbar next to the URL bar).
 
-### Be happy and feel free to PR or suggest any improvements.
+### Be happy and feel free to fork it, do a PR or suggest any improvements.
