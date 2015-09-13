@@ -1,0 +1,8 @@
+.ui.left.sidebar.vertical.inverted.menu
+  %a.header.item Sidebar
+  - 10.times do |n|
+    = link_to "Item #{n}", "#", class: "item"
+  
+  %a.header.item Tags
+  - 10.times do |n|
+    = link_to "Tag #{n}", "#", class: "item"

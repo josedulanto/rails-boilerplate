@@ -1,0 +1,20 @@
+.ui.top.fixed.menu
+  = link_to "#", class: "item", id: "toggle-sidebar" do
+    %i.icon.sidebar
+    Sidebar
+  = link_to "Rails Boilerplate", root_path, class: "header item"
+  .right.menu
+    .item
+      .ui.action.left.icon.input
+        %i.search.icon
+        %input{:placeholder => "I'm looking for ...", :type => "text"}/
+        %button.ui.button search
+    .ui.dropdown.item{:tabindex => "0"}
+      Username
+      %i.dropdown.icon
+      .menu{:tabindex => "-1"}
+        .item Favorites
+        .divider
+        .item Settings
+        .divider
+        .item Sign out
