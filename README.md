@@ -1,6 +1,6 @@
 Rails Boilerplate
 ===
-Basically I was tired of doing the same steps to bring a project to life and that's why I created a Rails 4 Boilerplate that fits my needs. I hope the features I included here suits your needs too. This has a lot of room for improvement so feel free to ask me or better yet fork it, improve it and PR it ;)
+Basically I got tired of doing the same steps over and over again to bring a Rails project to life and that's why a Rails 4 Boilerplate like this was the way to go. The features included here suits my needs and I hope they suit yours too. This has a lot of room for improvement so feel free to ask me or better yet fork it, improve it and PR it ;)
 
 Includes:
 ---
@@ -14,6 +14,8 @@ Includes:
 * [Figaro](https://github.com/laserlemon/figaro): Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file.
 * [Rack mini profiler](https://github.com/MiniProfiler/rack-mini-profiler): Profiler for your development and production Ruby rack apps.
 * [Pry](http://pryrepl.org/): An IRB alternative and runtime developer console.
+* [Quiet Assets](https://github.com/evrone/quiet_assets): Mutes assets pipeline log messages.
+* [Better Errors](https://github.com/charliesome/better_errors): Better error page for Rack apps.
 * [Simple Form](https://github.com/plataformatec/simple_form): Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.
 * [Kaminari](https://github.com/amatsuda/kaminari): A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4.
 
