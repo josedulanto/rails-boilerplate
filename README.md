@@ -39,9 +39,11 @@ git clone https://github.com/josedulanto/rails-boilerplate && cd rails-boilerpla
 ```
 bundle install
 ```
-* **Settings**: Create the file `config/application.yml` and save it with the following:
+* **Configuration**: Create the file `config/application.yml` and save it with the following:
 ```
 # Change the values according to your setup.
+APP_NAME: 'Rails Boilerplate'
+APP_DOMAIN: 'rails-boilerplate.dev'
 REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
 ```
 * **Database**: Configure your database settings in `config/database.yml` and then run:

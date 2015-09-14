@@ -2,7 +2,7 @@
   = link_to "#", class: "item", id: "toggle-sidebar" do
     %i.icon.sidebar
     Sidebar
-  = link_to "Rails Boilerplate", root_path, class: "header item"
+  = link_to ENV['APP_NAME'], root_path, class: "header item"
   .right.menu
     .item
       .ui.action.left.icon.input
