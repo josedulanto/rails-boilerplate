@@ -20,8 +20,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # provides Haml generators for Rails 4. It also enables Haml as the templating engine for you
 gem 'haml-rails'
-# Mechanize is a ruby library that makes automated web interaction easy.
-gem 'mechanize'
 # Bundler-like DSL + rake tasks for Bower on Rails
 gem 'bower-rails'
 # Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.
@@ -73,7 +71,6 @@ end
 # =======================
 # TESTING
 # =======================
-
 group :test do
   # Collection cardinality matchers, extracted from rspec-expectations
   gem 'rspec-collection_matchers'
