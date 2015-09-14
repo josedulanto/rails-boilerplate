@@ -34,7 +34,7 @@ Instructions:
 ```
 git clone https://github.com/josedulanto/rails-boilerplate && cd rails-boilerplate
 ```
-* **Bundler**: Run bundler with `bundle install`
+* **Gems**: Run bundler with `bundle install`
 * **Settings**: Create the file `config/application.yml` and save it with the following:
 ```
 # Change the values according to your setup.
