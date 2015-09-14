@@ -34,7 +34,11 @@ Instructions:
 ```
 git clone https://github.com/josedulanto/rails-boilerplate && cd rails-boilerplate
 ```
-* **Gems**: Run bundler with `bundle install`
+* **Ruby Gemset and Ruby Version**: Feel free to change the contents of the files `.ruby-version` which states the version of ruby to use (this boilerplate uses `ruby-2.2.3`) and `.ruby-gemset` which states the RVM gemset to use (this boilerplate uses `rails_bolerplate`). You could run `rvm current` to know which ruby version and gemset is being used.
+* **Gems**: Fetch gems running bundler with:
+```
+bundle install
+```
 * **Settings**: Create the file `config/application.yml` and save it with the following:
 ```
 # Change the values according to your setup.
