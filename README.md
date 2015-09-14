@@ -17,13 +17,6 @@ Includes:
 * [Simple Form](https://github.com/plataformatec/simple_form): Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.
 * [Kaminari](https://github.com/amatsuda/kaminari): A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4.
 
-ToDo:
----
-* Devise with omniauth.
-* Capistrano or similar for deployment.
-* Some admin panel.
-* Your suggestion here.
-
 My setup:
 ---
 You could skip this section but I wanted to show you some of the tools I use in my projects that could be useful for you too.
@@ -35,14 +28,40 @@ You could skip this section but I wanted to show you some of the tools I use in 
 
 Instructions:
 ---
-1. Clone this project to your machine:
-        git clone https://github.com/josedulanto/rails-boilerplate && cd rails-boilerplate
-2. Run bundler with `bundle install`
-3. Create the file `config/application.yml` and save it with the proper values according to your setup:
-        REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
-4. Configure your database settings in `config/database.yml` and then run `bundle exec rake db:setup`
-5. Fetch assets (Semtantic-UI) with Bower to your `vendor/assets/bower_components` folder with `bundle exec rake bower:install` and then run `bundle exec rake bower:resolve` to fix assets paths within Bower packages so they work with the Rails Assets Pipeline.
-6. If you have [Anvil](http://anvilformac.com/) or [Pow](http://pow.cx/) then create the server and navigate to `http://rails-boilerplate.dev/` (or whatever domain you configured) or run `bundle exec rails s` and navigate to `http://localhost:3000/`
-7. In another console/terminal run Guard with `bundle exec guard` and if you installed the LiveReload Chrome extension then hit the `Enable LiveReload` button (you should have it in your toolbar next to the URL bar).
+* **Clone**: Clone this project to your machine.
+```
+git clone https://github.com/josedulanto/rails-boilerplate && cd rails-boilerplate
+```
+* **Bundler**: Run bundler with `bundle install`
+* **Settings**: Create the file `config/application.yml` and save it with the following:
+```
+# Change the values according to your setup.
+REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
+```
+* **Database**: Configure your database settings in `config/database.yml` and then run:
+```
+bundle exec rake db:setup
+```
+* **Bower**: Fetch assets (Semtantic-UI) with Bower to your `vendor/assets/bower_components` folder with:
+```
+bundle exec rake bower:install
+```
+To fix assets paths within Bower packages so they work with the Rails Assets Pipeline run:
+```
+bundle exec rake bower:resolve
+```
+* **Server**: If you have [Anvil](http://anvilformac.com/) or [Pow](http://pow.cx/) then create the server and navigate to `http://rails-boilerplate.dev/` (or whatever domain you configured) or run:
+```
+bundle exec rails s
+```
+And navigate to `http://localhost:3000/`
+* **LiveReload**: In another console/terminal run Guard with `bundle exec guard` and if you installed the LiveReload Chrome extension then hit the `Enable LiveReload` button (you should have it in your toolbar next to the URL bar).
+
+ToDo:
+---
+* Devise with omniauth.
+* Capistrano or similar for deployment.
+* Some admin panel.
+* Your suggestion here.
 
 ### Be happy and feel free to fork it, do a PR or suggest any improvements.
