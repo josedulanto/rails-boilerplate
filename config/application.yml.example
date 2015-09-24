@@ -1,0 +1,57 @@
+# GENERAL
+####################
+# The name of your awesome app ;)
+APP_NAME: 'Rails Boilerplate'
+
+# DEVISE
+####################
+# Generate from console/terminal with the command 'rake secret'
+DEVISE_SECRET_KEY:
+# the email to use in devise
+DEVISE_MAILER:
+
+# DEVISE OMNIAUTH
+# When creating applications, use the callback url:
+# http://<your-domain>/auth/<twitter|facebook|google_oauth2|instagram|linkedin|github>/callback
+# Example ~> http://example.com/auth/twitter/callback
+####################
+# Create a Twitter application in https://apps.twitter.com/
+TWITTER_APP_ID:
+TWITTER_APP_SECRET:
+# Create a Facebook application in https://developers.facebook.com/
+FACEBOOK_APP_ID:
+FACEBOOK_APP_SECRET:
+# Create a Github application in https://github.com/settings/applications/new
+GITHUB_APP_ID:
+GITHUB_APP_SECRET:
+# Create a Google+ application in https://console.developers.google.com
+# Be sure to enable the Google+ API or it may not work
+GOOGLE_APP_ID:
+GOOGLE_APP_SECRET:
+# Create a LinkedIn application in https://www.linkedin.com/secure/developer
+# Select r_basicprofile and r_emailaddress permissions
+LINKEDIN_APP_ID:
+LINKEDIN_APP_SECRET:
+# Create a Instagram application in https://instagram.com/developer/
+INSTAGRAM_APP_ID:
+INSTAGRAM_APP_SECRET:
+  
+
+# DEVELOPMENT ENV
+####################
+development: &development
+  SECRET_KEY_BASE: # Generate from console/terminal with the command 'rake secret'
+  REDIS_SERVER_URL:
+  APP_DOMAIN:
+
+# TEST ENV
+####################
+test:
+  <<: *development
+
+# PRODUCTION ENV
+####################
+production:
+  SECRET_KEY_BASE: # Generate from console/terminal with the command 'rake secret'
+  REDIS_SERVER_URL:
+  APP_DOMAIN:
