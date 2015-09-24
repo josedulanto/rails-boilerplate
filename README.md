@@ -8,6 +8,8 @@ Includes:
 * [PostgreSQL](http://www.postgresql.org/): PostgreSQL is a powerful, open source object-relational database system.
 * [Redis](http://redis.io/) (to handle sessions and cache): Redis is an open source (BSD licensed), in-memory data structure store, used as database, cache and message broker.
 * Testing with [RSpec](http://rspec.info/), [Capybara](https://github.com/jnicklas/capybara), [Factory Girl](https://github.com/thoughtbot/factory_girl), [Faker](https://github.com/stympy/faker) and [Poltergeist](https://github.com/teampoltergeist/poltergeist).
+* [Devise](https://github.com/plataformatec/devise): Flexible authentication solution for Rails with Warden. All views styled with Semantic-UI.
+* [Omniauth](https://github.com/intridea/omniauth): OmniAuth is a flexible authentication system utilizing Rack middleware. Devise integration with providers like [Facebook](https://github.com/mkdynamic/omniauth-facebook), [Twitter](https://github.com/arunagw/omniauth-twitter), [Google+](https://github.com/zquestz/omniauth-google-oauth2), [LinkedIn](https://github.com/decioferreira/omniauth-linkedin-oauth2), [GitHub](https://github.com/intridea/omniauth-github) and [Instagram](https://github.com/ropiku/omniauth-instagram).
 * [Semantic-UI](http://www.semantic-ui.com/) (I had enough of Twitter Bootstrap): Semantic is a UI component framework based around useful principles from natural language.
 * [Bower](https://github.com/rharriso/bower-rails/) (to manage assets): Bundler-like DSL + rake tasks for Bower on Rails.
 * [Guard](https://github.com/guard/guard): Guard is a command line tool to easily handle events on file system modifications. Included with extensions for [Spring](https://github.com/guard/guard-spring), [CoffeeScript](https://github.com/guard/guard-coffeescript), [SASS](https://github.com/guard/guard-sass), [LiveReload](https://github.com/guard/guard-livereload), [RSpec](https://github.com/guard/guard-rspec) and [Pow](https://github.com/guard/guard-pow).
@@ -16,8 +18,8 @@ Includes:
 * [Pry](http://pryrepl.org/): An IRB alternative and runtime developer console.
 * [Quiet Assets](https://github.com/evrone/quiet_assets): Mutes assets pipeline log messages.
 * [Better Errors](https://github.com/charliesome/better_errors): Better error page for Rack apps.
-* [Simple Form](https://github.com/plataformatec/simple_form): Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.
-* [Kaminari](https://github.com/amatsuda/kaminari): A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4.
+* [Simple Form](https://github.com/plataformatec/simple_form): Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup. I included some wrapper for Semantic-UI inputs.
+* [Letter Opener Web](https://github.com/fgrehm/letter_opener_web): A web interface for browsing Ruby on Rails sent emails. If you are in developer environment and you "send" an email, you can check how it looks or if it was "delivered" by visiting `http://<your-local-domain>/letter_opener`
 
 My setup:
 ---
@@ -34,19 +36,19 @@ Instructions:
 ```
 git clone https://github.com/josedulanto/rails-boilerplate && cd rails-boilerplate
 ```
-* **Ruby Gemset and Ruby Version**: Feel free to change the contents of the files `.ruby-version` which states the version of ruby to use (this boilerplate uses `ruby-2.2.3`) and `.ruby-gemset` which states the RVM gemset to use (this boilerplate uses `rails_bolerplate`). You could run `rvm current` to know which ruby version and gemset is being used.
+* **Ruby Gemset and Ruby Version**: Feel free to change the contents of the files `.ruby-version` which states the version of ruby to use (this boilerplate uses `ruby-2.2.3`) and `.ruby-gemset` which states the RVM gemset to use (this boilerplate uses `rails_bolerplate`, but you can use whatever name you want for your gemset). You could run `rvm current` to know which ruby version and gemset is being used.
 * **Gems**: Fetch gems running bundler with:
 ```
 bundle install
 ```
-* **Configuration**: Create the file `config/application.yml` and save it with the following:
+* **Configuration**: Rename the file `config/application.yml.example` to `config/application.yml` and change the values there.
 ```
 # Change the values according to your setup.
 APP_NAME: 'Rails Boilerplate'
 APP_DOMAIN: 'rails-boilerplate.dev'
 REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
 ```
-* **Database**: Configure your database settings in `config/database.yml` and then run:
+* **Database**: Rename the file `config/database.yml.example` to `config/database.yml` then configure it and run:
 ```
 bundle exec rake db:setup
 ```
@@ -67,8 +69,8 @@ And navigate to `http://localhost:3000/`
 
 ToDo:
 ---
-* Devise with omniauth.
-* Capistrano or similar for deployment.
+* Authorization capabilities.
+* Server automation.
 * Some admin panel.
 * Your suggestion here.
 
