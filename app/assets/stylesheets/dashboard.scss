@@ -1,0 +1,15 @@
+// Place all the styles related to the Dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.dashboard {
+
+  .left.floated.image {
+    margin: 2em 2em 2em -4em;
+  }
+  
+  .right.floated.image {
+    margin: 2em -4em 2em 2em;
+  }
+
+}

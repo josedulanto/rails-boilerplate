@@ -10,14 +10,15 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require dashboard
  *= require_self
  */
 
-@import "semantic-ui/dist/semantic.min";
-@import "semantic-ui/dist/components/dropdown.min";
-@import "semantic-ui/dist/components/sidebar.min";
+@import "base/all";
 
-body .main.container {
-  margin-top: 50px;
+body {  
+  #responsive-main-menu {
+    display: none;
+    .item.search { height: 54px; }
+  }
 }

@@ -8,9 +8,6 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body{class: "#{controller_action_class()}"}
-    = render "shared/sidebar"
-    .pusher
-      = render "shared/navbar"
-      .ui.main.fluid.container
-        = flash_messages(flash)
-        = yield
+    = flash_messages(flash)
+    .ui.one.column.middle.aligned.center.aligned.grid
+      = yield

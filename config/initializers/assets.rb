@@ -10,6 +10,8 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w(
+  static.css
+  static.js
   semantic-ui/dist/themes/default/assets/images/*
   semantic-ui/dist/themes/default/assets/fonts/*
 )

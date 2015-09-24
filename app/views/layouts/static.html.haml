@@ -1,0 +1,36 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}/
+    %title= ENV['APP_NAME']
+    = stylesheet_link_tag    'static', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'static', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body{class: "#{controller_action_class()}"}
+    .ui.large.top.fixed.hidden.menu
+      .ui.container
+        = link_to "Home", root_path, class: "active item"
+        = link_to "Work", "#", class: "item"
+        = link_to "Company", "#", class: "item"
+        = link_to "Careers", "#", class: "item"
+        .right.menu
+          - if signed_in?
+            .item= link_to "Go to application", dashboard_path, class: "ui primary button"
+          - else
+            .item= link_to "Log in", new_user_session_path, class: "ui button"
+            .item= link_to "Sign up", new_user_registration_path, class: "ui primary button"
+    .ui.vertical.inverted.sidebar.menu.left
+      = link_to "Home", root_path, class: "active item"
+      = link_to "Work", "#", class: "item"
+      = link_to "Company", "#", class: "item"
+      = link_to "Careers", "#", class: "item"
+      .right.menu
+        - if signed_in?
+          .item= link_to "Go to application", dashboard_path, class: "ui primary button"
+        - else
+          .item= link_to "Log in", new_user_session_path, class: "ui button"
+          .item= link_to "Sign up", new_user_registration_path, class: "ui primary button"
+    .pusher
+      = flash_messages(flash)
+      = yield

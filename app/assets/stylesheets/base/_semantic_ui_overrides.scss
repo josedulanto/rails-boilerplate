@@ -1,0 +1,26 @@
+/*****************************************
+* DROP STUFF TO ADJUST OR FIX SEMANTIC UI
+*****************************************/
+
+.menu {
+  .item .button + .button { margin-left: 3.5px !important; } // Buttons within same item should have a space between them
+  &.main {
+    z-index: 102 !important; // Don't overlap flash messages!
+    & + .menu { z-index: 102; }
+  }
+}
+
+
+input.boolean {
+  margin-top: 2px;
+  margin-right: 4px;
+  height: 15px;
+  width: 15px;
+}
+
+// Let's align the close icon in messages
+.ui.message > .close.icon {
+  float: right;
+  margin-top: 3px;
+  right: 22px;
+}
