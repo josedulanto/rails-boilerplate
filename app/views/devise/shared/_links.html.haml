@@ -1,0 +1,19 @@
+.ui.bottom.attached.secondary.segment
+  - if controller_name != 'sessions'
+    = link_to "Have an account? Log in", new_session_path(resource_name), class: "ui button"
+  - if controller_name != 'sessions' && (devise_mapping.registerable? && controller_name != 'registrations')
+    .ui.horizontal.divider or
+  - if devise_mapping.registerable? && controller_name != 'registrations'
+    = link_to new_registration_path(resource_name), class: "ui big teal labeled icon button" do
+      %i.signup.icon
+      New to us? Sign up!
+    
+.ui.message
+  - if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations'
+    = link_to "Forgot your password?", new_password_path(resource_name)
+    %br/
+  - if devise_mapping.confirmable? && controller_name != 'confirmations'
+    = link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name)
+    %br/
+  - if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks'
+    = link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name)

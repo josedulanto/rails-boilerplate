@@ -1,0 +1,13 @@
+.ui.one.column.centered.grid
+  .sixteen.wide.mobile.seven.wide.tablet.six.wide.computer.center.aligned.column
+    %h2.ui.top.attached.left.aligned.header= "#{current_user.unconfirmed_email.present? ? 'Confirm' : 'Add'} your email address"
+    .ui.attached.segment
+      = simple_form_for(current_user, as: resource_name, url: finish_user_registration_path, html: { method: :patch, class: "large with-message" }) do |f|
+        = f.error_notification
+        - if devise_mapping.confirmable? && current_user.pending_reconfirmation?
+          %p= "A confirmation email was dispatched to <strong>#{current_user.unconfirmed_email}</strong>, if the email address is incorrect please change it here.".html_safe
+        = f.input :email, required: true, autofocus: true, label: false, placeholder: "Email", input_html: {value: "#{current_user.unconfirmed_email if current_user.unconfirmed_email.present?}"}
+        - if !current_user.unconfirmed_email.present?
+          = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), label: false, placeholder: "Password"
+          = f.input :password_confirmation, required: true, label: false, placeholder: "Repeat password"
+        = f.button :submit, "Continue", class: "large fluid"

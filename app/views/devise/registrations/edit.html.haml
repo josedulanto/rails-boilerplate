@@ -1,0 +1,28 @@
+.ui.one.column.centered.grid
+  .sixteen.wide.mobile.seven.wide.tablet.seven.wide.computer.center.aligned.column
+    %h2.ui.top.attached.left.aligned.header Account
+    .ui.attached.segment
+      = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: "large with-message" }) do |f|
+        = f.error_notification
+        = f.input :email, required: true, autofocus: true, label: false, placeholder: "Email"
+        - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+          %p= "Currently waiting confirmation for: #{resource.unconfirmed_email}"
+        = f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false, label: false, placeholder: "Password"
+        = f.input :password_confirmation, required: false, label: false, placeholder: "Password confirmation"
+        = f.input :current_password, hint: "we need your current password to confirm your changes", required: true, label: false, placeholder: "Current password"
+        = f.button :submit, "Update", class: "large fluid"
+    .ui.attached.secondary.segment
+      .ui.two.column.stackable.grid
+        - resource_class.omniauth_providers.each do |provider|
+          .column
+            - if resource.identities.collect(&:provider).include?(provider.to_s)
+              = link_to user_omniauth_destroy_identity_path(provider), data: { confirm: "Are you sure?" }, method: :delete, class: "ui #{omniauth_provider_icon(provider)} large icon button" do
+                %i{class: "#{omniauth_provider_icon(provider)} icon"}
+                = "Unlink #{omniauth_provider_name(provider)}"
+            - else
+              = link_to omniauth_authorize_path(resource_name, provider), class: "ui #{omniauth_provider_icon(provider)} large icon button" do
+                %i{class: "#{omniauth_provider_icon(provider)} icon"}
+                = "Link #{omniauth_provider_name(provider)}"
+    .ui.bottom.attached.secondary.segment
+      %h3 I'm unhappy (ᵕ̣̣̣̣̣̣﹏ᵕ̣̣̣̣̣̣)
+      = link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "ui button red"

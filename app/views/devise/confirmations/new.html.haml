@@ -1,0 +1,11 @@
+.ui.one.column.centered.grid
+  .sixteen.wide.mobile.seven.wide.tablet.six.wide.computer.center.aligned.column
+    %h2.ui.top.attached.left.aligned.header Resend confirmation instructions
+    .ui.attached.segment
+      = simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post, class: 'large with-message' }) do |f|
+        = f.error_notification
+        = f.full_error :confirmation_token
+        = f.input :email, required: true, autofocus: true, label: false, placeholder: "Email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email)
+        = f.button :submit, "Resend confirmation instructions", class: "large fluid"
+    
+    = render "devise/shared/links"

@@ -108,4 +108,7 @@ RSpec.configure do |config|
   #   Capybara.javascript_driver = :selenium
   # end
   # binding.pry
+  
+  # Devise
+  config.include Devise::TestHelpers, type: :controller
 end

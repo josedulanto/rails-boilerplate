@@ -1,0 +1,15 @@
+.ui.one.column.centered.grid
+  .sixteen.wide.mobile.seven.wide.tablet.six.wide.computer.center.aligned.column
+    %h2.ui.top.attached.left.aligned.header Log in
+    .ui.attached.segment
+      = simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "large with-message"}) do |f|
+        = f.error_notification
+        = f.input :email, required: false, autofocus: true, label: false, placeholder: "Email"
+        = f.input :password, required: false, label: false, placeholder: "Password"
+        - if devise_mapping.rememberable?
+          = f.input :remember_me, as: :boolean, wrapper: "inline_checkbox"
+        = f.button :submit, "Log in"
+        .ui.horizontal.divider or
+        = render "devise/shared/omniauth_providers"
+    
+    = render "devise/shared/links"
