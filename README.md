@@ -107,13 +107,9 @@ bundle exec rake bower:resolve
 
 ### Server
 
-If you have [Anvil](http://anvilformac.com/) or [Pow](http://pow.cx/) then create the server and navigate to `http://rails-boilerplate.dev/` (or whatever domain you configured) or run:
+If you have [Anvil](http://anvilformac.com/) or [Pow](http://pow.cx/) then create the server and navigate to `http://rails-boilerplate.dev/` (or whatever domain you configured) or run `bundle exec rails s` and navigate to `http://localhost:3000`
 
-```
-bundle exec rails s
-```
-
-Navigate to `http://localhost:3000/` where you should be welcomed by the application.
+Welcome to your rails application.
 
 ### LiveReload
 
