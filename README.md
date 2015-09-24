@@ -32,40 +32,92 @@ You could skip this section but I wanted to show you some of the tools I use in 
 
 Instructions:
 ---
-* **Clone**: Clone this project to your machine.
+### Clone
+
+Clone this project to your machine.
+
 ```
 git clone https://github.com/josedulanto/rails-boilerplate && cd rails-boilerplate
 ```
-* **Ruby Gemset and Ruby Version**: Feel free to change the contents of the files `.ruby-version` which states the version of ruby to use (this boilerplate uses `ruby-2.2.3`) and `.ruby-gemset` which states the RVM gemset to use (this boilerplate uses `rails_bolerplate`, but you can use whatever name you want for your gemset). You could run `rvm current` to know which ruby version and gemset is being used.
-* **Gems**: Fetch gems running bundler with:
+
+### Ruby Gemset and Ruby Version
+
+Feel free to change the contents of the files `.ruby-version` which states the version of ruby to use (this boilerplate uses `ruby-2.2.3`) and `.ruby-gemset` which states the RVM gemset to use (this boilerplate uses `rails_bolerplate`, but you can use whatever name you want for your gemset). You could run `rvm current` to know which ruby version and gemset is being used.
+
+### Gems
+
+Fetch gems running bundler with:
+
 ```
 bundle install
 ```
-* **Configuration**: Rename the file `config/application.yml.example` to `config/application.yml` and change the values there.
+
+### Configuration
+
+Rename the file `config/application.yml.example` to `config/application.yml` and change the values there.
+
 ```
-# Change the values according to your setup.
+# I prefilled this for you, but change them according to your needs.
 APP_NAME: 'Rails Boilerplate'
 APP_DOMAIN: 'rails-boilerplate.dev'
+DEVISE_MAILER: 'rails.boilerplate@example.com'
 REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
 ```
-* **Database**: Rename the file `config/database.yml.example` to `config/database.yml` then configure it and run:
+
+Run the command 'bundle exec rake secret' in console/terminal to generate the different values for `SECRET_KEY_BASE` and `DEVISE_SECRET_KEY`
+
+#### Omniauth providers
+
+All omniauth providers are disabled by default, but you can enable them by uncommenting the lines at the bottom of the file `config/initializers/devise.rb`
+
+```
+# ==> UNCOMMENT THE LINES BELOW IF YOU WANT TO USE ANY OF THOSE AS OMNIAUTH PROVIDERS
+
+# config.omniauth :twitter, ENV["TWITTER_APP_ID"], ENV["TWITTER_APP_SECRET"]
+# config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_APP_SECRET"], scope: "email"
+# config.omniauth :google_oauth2, ENV['GOOGLE_APP_ID'], ENV['GOOGLE_APP_SECRET'], scope: "email,profile,offline" #, prompt: "consent"
+# config.omniauth :instagram, ENV['INSTAGRAM_APP_ID'], ENV['INSTAGRAM_APP_SECRET']
+# config.omniauth :linkedin, ENV['LINKEDIN_APP_ID'], ENV['LINKEDIN_APP_SECRET'], scope: 'r_basicprofile r_emailaddress'
+# config.omniauth :github, ENV['GITHUB_APP_ID'], ENV['GITHUB_APP_SECRET'], scope: 'user:email'
+```
+
+For those providers you choose to enable, you have to set their `<PROVIDER>_APP_ID` and `<PROVIDER>_APP_SECRET` within the `config/application.yml` file, please read it carefully.
+
+### Database
+
+Rename the file `config/database.yml.example` to `config/database.yml` then configure it and run:
+
 ```
 bundle exec rake db:setup
 ```
-* **Bower**: Fetch assets (Semtantic-UI) with Bower to your `vendor/assets/bower_components` folder with:
+
+### Bower
+
+Fetch assets (Semtantic-UI) with Bower to your `vendor/assets/bower_components` folder with:
+
 ```
 bundle exec rake bower:install
 ```
+
 To fix assets paths within Bower packages so they work with the Rails Assets Pipeline run:
+
 ```
 bundle exec rake bower:resolve
 ```
-* **Server**: If you have [Anvil](http://anvilformac.com/) or [Pow](http://pow.cx/) then create the server and navigate to `http://rails-boilerplate.dev/` (or whatever domain you configured) or run:
+
+### Server
+
+If you have [Anvil](http://anvilformac.com/) or [Pow](http://pow.cx/) then create the server and navigate to `http://rails-boilerplate.dev/` (or whatever domain you configured) or run:
+
 ```
 bundle exec rails s
 ```
-And navigate to `http://localhost:3000/`
-* **LiveReload**: In another console/terminal run Guard with `bundle exec guard` and if you installed the LiveReload Chrome extension then hit the `Enable LiveReload` button (you should have it in your toolbar next to the URL bar).
+
+Navigate to `http://localhost:3000/` where you should be welcomed by the application.
+
+### LiveReload
+
+In another console/terminal run Guard with `bundle exec guard` and if you installed the LiveReload Chrome extension then hit the `Enable LiveReload` button (you should have it in your toolbar next to the URL bar).
 
 ToDo:
 ---
@@ -74,4 +126,4 @@ ToDo:
 * Some admin panel.
 * Your suggestion here.
 
-### Be happy and feel free to fork it, do a PR or suggest any improvements.
+> Be happy and feel free to fork it, do a PR or suggest any improvements.
