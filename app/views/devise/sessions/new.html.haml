@@ -9,7 +9,6 @@
         - if devise_mapping.rememberable?
           = f.input :remember_me, as: :boolean, wrapper: "inline_checkbox"
         = f.button :submit, "Log in"
-        .ui.horizontal.divider or
         = render "devise/shared/omniauth_providers"
     
     = render "devise/shared/links"

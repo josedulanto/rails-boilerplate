@@ -10,7 +10,6 @@
       = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), label: false, placeholder: "Password"
       = f.input :password_confirmation, required: true, label: false, placeholder: "Repeat password"
       = f.button :submit, "Sign up", class: "big fluid teal"
-      .ui.horizontal.divider or
       = render "devise/shared/omniauth_providers"
     
     = render "devise/shared/links"
