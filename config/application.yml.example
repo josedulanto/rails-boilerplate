@@ -5,10 +5,10 @@ APP_NAME: 'Rails Boilerplate'
 
 # DEVISE
 ####################
-# Generate from console/terminal with the command 'rake secret'
+# Generate from console/terminal with the command 'bundle exec rake secret'
 DEVISE_SECRET_KEY:
 # the email to use in devise
-DEVISE_MAILER:
+DEVISE_MAILER: 'rails.boilerplate@example.com'
 
 # DEVISE OMNIAUTH
 # When creating applications, use the callback url:
@@ -40,9 +40,9 @@ INSTAGRAM_APP_SECRET:
 # DEVELOPMENT ENV
 ####################
 development: &development
-  SECRET_KEY_BASE: # Generate from console/terminal with the command 'rake secret'
-  REDIS_SERVER_URL:
-  APP_DOMAIN:
+  SECRET_KEY_BASE: # Generate from console/terminal with the command 'bundle exec rake secret'
+  REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
+  APP_DOMAIN: 'rails-boilerplate.dev'
 
 # TEST ENV
 ####################
@@ -52,6 +52,6 @@ test:
 # PRODUCTION ENV
 ####################
 production:
-  SECRET_KEY_BASE: # Generate from console/terminal with the command 'rake secret'
+  SECRET_KEY_BASE: # Generate from console/terminal with the command 'bundle exec rake secret'
   REDIS_SERVER_URL:
   APP_DOMAIN:
