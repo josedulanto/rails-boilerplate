@@ -26,14 +26,20 @@ gem 'bower-rails'
 gem 'simple_form'
 # Provides a simple helper to get an HTML select list of countries
 gem 'country_select'
-# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4
-gem 'kaminari'
 # Redis stores for Ruby on Rails
 gem 'redis-rails'
 # Profiler for your development and production Ruby rack apps.
 gem 'rack-mini-profiler'
 # Simple Rails app configuration
 gem 'figaro'
+# Flexible authentication solution for Rails with Warden.
+gem 'devise'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin-oauth2'
+gem 'omniauth-instagram'
+gem 'omniauth-google-oauth2', git: 'https://github.com/zquestz/omniauth-google-oauth2', branch: 'master'
+gem 'omniauth-github'
 
 # =======================
 # DEVELOPMENT
@@ -45,6 +51,8 @@ group :development do
   gem 'better_errors'
   # Retrieve the binding of a method's caller in MRI 1.9.2+
   gem 'binding_of_caller'
+  # A web interface for browsing Ruby on Rails sent emails
+  gem 'letter_opener_web'
 end
 
 group :development, :test do
