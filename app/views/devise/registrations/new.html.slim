@@ -1,9 +1,9 @@
 .ui.one.column.centered.grid
   .sixteen.wide.mobile.seven.wide.tablet.six.wide.computer.center.aligned.column
-    %h2.ui.top.attached.left.aligned.header Sign up
+    h2.ui.top.attached.left.aligned.header Sign up
     .ui.attached.message
       .header Welcome to our site!
-      %p Fill out the form below to sign-up for a new account
+      p Fill out the form below to sign-up for a new account
     = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'attached fluid segment large with-message'}) do |f|
       = f.error_notification
       = f.input :email, required: true, autofocus: true, label: false, placeholder: "Email"

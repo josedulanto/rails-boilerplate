@@ -2,7 +2,7 @@
   .ui.container
     .ui.large.secondary.inverted.pointing.menu
       = link_to "#", class: "toc item" do
-        %i.sidebar.icon
+        i.sidebar.icon
       = link_to "Home", root_path, class: "item active"
       = link_to "Work", "#", class: "item"
       = link_to "Company", "#", class: "item"
@@ -14,64 +14,64 @@
           = link_to "Log in", new_user_session_path, class: "ui inverted button"
           = link_to "Sign up", new_user_registration_path, class: "ui inverted button"
   .ui.text.container
-    %h1.ui.inverted.header
-      Imagine-a-Company
-    %h2 Do whatever you want when you want to.
+    h1.ui.inverted.header
+      | Imagine-a-Company
+    h2 Do whatever you want when you want to.
     .ui.huge.primary.button
-      Get Started
-      %i.right.arrow.icon
+      | Get Started
+      i.right.arrow.icon
 .ui.vertical.stripe.segment
   .ui.middle.aligned.stackable.grid.container
     .row
       .eight.wide.column
-        %h3.ui.header We Help Companies and Companions
-        %p We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.
-        %h3.ui.header We Make Bananas That Can Dance
-        %p Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
+        h3.ui.header We Help Companies and Companions
+        p We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.
+        h3.ui.header We Make Bananas That Can Dance
+        p Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
       .six.wide.right.floated.column
         = image_tag "white_image.png", alt: "Nan", class: "ui large bordered rounded image"
     .row
       .center.aligned.column
-        %a.ui.huge.button Check Them Out
+        a.ui.huge.button Check Them Out
 .ui.vertical.stripe.quote.segment
   .ui.equal.width.stackable.internally.celled.grid
     .center.aligned.row
       .column
-        %h3 "What a Company"
-        %p That is what they all say about us
+        h3 "What a Company"
+        p That is what they all say about us
       .column
-        %h3 "I shouldn't have gone with their competitor."
-        %p
+        h3 "I shouldn't have gone with their competitor."
+        p
           = image_tag "nan.jpg", alt: "Nan", class: "ui avatar image"
-          %b Nan
-          Chief Fun Officer Acme Toys
+          b Nan
+          | Chief Fun Officer Acme Toys
 .ui.vertical.stripe.segment
   .ui.text.container
-    %h3.ui.header Breaking The Grid, Grabs Your Attention
-    %p Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.
+    h3.ui.header Breaking The Grid, Grabs Your Attention
+    p Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.
     = link_to "Read More", "#", class: "ui large button"
-    %h4.ui.horizontal.header.divider
+    h4.ui.horizontal.header.divider
       = link_to "Case Studies", "#"
-    %h3.ui.header Did We Tell You About Our Bananas?
-    %p Yes I know you probably disregarded the earlier boasts as non-sequitor filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
+    h3.ui.header Did We Tell You About Our Bananas?
+    p Yes I know you probably disregarded the earlier boasts as non-sequitor filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
     = link_to "I'm Still Quite Interested", "#", class: "ui large button"
 .ui.inverted.vertical.footer.segment
   .ui.container
     .ui.stackable.inverted.divided.equal.height.stackable.grid
       .three.wide.column
-        %h4.ui.inverted.header About
+        h4.ui.inverted.header About
         .ui.inverted.link.list
           = link_to "Sitemap", "#", class: "item"
           = link_to "Contact Us", "#", class: "item"
           = link_to "Religious Ceremonies", "#", class: "item"
           = link_to "Gazebo Plans", "#", class: "item"
       .three.wide.column
-        %h4.ui.inverted.header Services
+        h4.ui.inverted.header Services
         .ui.inverted.link.list
           = link_to "Banana Pre-Order", "#", class: "item"
           = link_to "DNA FAQ", "#", class: "item"
           = link_to "How To Access", "#", class: "item"
           = link_to "Favorite X-Men", "#", class: "item"
       .seven.wide.column
-        %h4.ui.inverted.header Footer Header
-        %p Extra space for a call to action inside the footer that could help re-engage users.
+        h4.ui.inverted.header Footer Header
+        p Extra space for a call to action inside the footer that could help re-engage users.

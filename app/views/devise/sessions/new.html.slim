@@ -1,6 +1,6 @@
 .ui.one.column.centered.grid
   .sixteen.wide.mobile.seven.wide.tablet.six.wide.computer.center.aligned.column
-    %h2.ui.top.attached.left.aligned.header Log in
+    h2.ui.top.attached.left.aligned.header Log in
     .ui.attached.segment
       = simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "large with-message"}) do |f|
         = f.error_notification

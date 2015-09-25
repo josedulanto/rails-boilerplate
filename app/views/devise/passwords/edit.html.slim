@@ -1,6 +1,6 @@
 .ui.one.column.centered.grid
   .sixteen.wide.mobile.seven.wide.tablet.six.wide.computer.center.aligned.column
-    %h2.ui.top.attached.left.aligned.header Change your password
+    h2.ui.top.attached.left.aligned.header Change your password
     .ui.attached.segment
       = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put, class: 'large with-message' }) do |f|
         = f.error_notification

@@ -18,8 +18,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-# provides Haml generators for Rails 4. It also enables Haml as the templating engine for you
-gem 'haml-rails'
+# Slim templates generator for Rails 3 and 4
+gem 'slim-rails'
 # Bundler-like DSL + rake tasks for Bower on Rails
 gem 'bower-rails'
 # Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.

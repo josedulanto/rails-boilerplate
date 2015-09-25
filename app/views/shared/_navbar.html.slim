@@ -1,23 +1,23 @@
 .ui.grid
-  -# MENU SHOWN FOR SCREEN SIZES OF TABLET AND UP
+  / MENU SHOWN FOR SCREEN SIZES OF TABLET AND UP
   .computer.tablet.only.row
     .ui.top.fixed.borderless.main.menu
       = link_to "#", class: "item toc" do
-        %i.sidebar.icon
-        Sidebar
+        i.sidebar.icon
+        | Sidebar
       = link_to ENV['APP_NAME'], dashboard_path, class: "header item"
       .right.menu
         .item
           .ui.action.left.icon.transparent.input
-            %i.search.icon
-            %input{:placeholder => "I'm looking for ...", :type => "text"}/
+            i.search.icon
+            input placeholder=("I'm looking for ...") type="text" /
         - if user_signed_in?
-          .ui.dropdown.item{:tabindex => "0"}
+          .ui.dropdown.item tabindex="0" 
             .text
               = image_tag current_user_image, alt: current_user.name, class: "ui avatar image"
               = current_user.name
-            %i.dropdown.icon
-            .menu{:tabindex => "-1"}
+            i.dropdown.icon
+            .menu tabindex="-1" 
               = link_to "Dashboard", dashboard_path, class: "item"
               .divider
               = link_to "Account", edit_user_registration_path, class: "item"
@@ -28,27 +28,27 @@
             = link_to "Sign up", new_user_registration_path, class: "ui teal button"
             = link_to "Log in", new_user_session_path, class: "ui button"
 
-  -# MENU SHOWN FOR SCREEN SIZES OF MOBILE AND BELOW
+  / MENU SHOWN FOR SCREEN SIZES OF MOBILE AND BELOW
   .mobile.only.row
     .ui.top.fixed.borderless.main.menu
       = link_to "#", class: "item toc" do
-        %i.sidebar.icon
+        i.sidebar.icon
       = link_to ENV['APP_NAME'], dashboard_path, class: "brand item"
       .right.menu.open
         = link_to "", class: "menu item" do
-          %i.sidebar.icon
+          i.sidebar.icon
     #responsive-main-menu.ui.fixed.stackable.fluid.hidden.menu
       .item.search
         .ui.huge.action.left.icon.transparent.input
-          %i.search.icon
-          %input{:placeholder => "I'm looking for ...", :type => "text"}/
+          i.search.icon
+          input placeholder=("I'm looking for ...") type="text" /
       - if user_signed_in?
-        .ui.dropdown.item{:tabindex => "0"}
+        .ui.dropdown.item tabindex="0" 
           .text
             = image_tag current_user_image, alt: current_user.name, class: "ui avatar image"
             = current_user.name
-          %i.dropdown.icon
-          .menu{:tabindex => "-1"}
+          i.dropdown.icon
+          .menu tabindex="-1" 
             = link_to "Dashboard", dashboard_path, class: "item"
             .divider
             = link_to "Account", edit_user_registration_path, class: "item"
