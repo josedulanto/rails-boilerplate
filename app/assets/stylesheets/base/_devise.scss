@@ -2,7 +2,7 @@
 * DROP STUFF TO ADJUST OR FIX DEVISE
 *****************************************/
 
-body.devise {
+body.devise, body.users.registrations {
   .pusher { background-color: #DADADA !important; }
   .main.container {
     height: 100%;
