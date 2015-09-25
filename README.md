@@ -64,7 +64,7 @@ DEVISE_MAILER: 'rails.boilerplate@example.com'
 REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
 ```
 
-Run the command 'bundle exec rake secret' in console/terminal to generate the different values for `SECRET_KEY_BASE` and `DEVISE_SECRET_KEY`
+Run the command `bundle exec rake secret` in console/terminal to generate the different values for `SECRET_KEY_BASE` and `DEVISE_SECRET_KEY`
 
 #### Omniauth providers
 
