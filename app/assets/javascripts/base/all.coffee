@@ -23,7 +23,7 @@ ready = ->
   $('.with-popup').popup()
   
   # Enable dropdowns
-  $('.ui.dropdown').dropdown()
+  $('.ui.dropdown, select').dropdown()
   
   # Toggle left sidebar when clicking the 'Sidebar' link in the navbar
   $('.ui.sidebar').sidebar 'attach events', '.toc', 'toggle'
