@@ -8,7 +8,7 @@ APP_NAME: 'Rails Boilerplate'
 # Generate from console/terminal with the command 'bundle exec rake secret'
 DEVISE_SECRET_KEY:
 # the email to use in devise
-DEVISE_MAILER: 'rails.boilerplate@example.com'
+DEVISE_MAIL_SENDER: 'rails.boilerplate@example.com'
 
 # DEVISE OMNIAUTH
 # When creating applications, use the callback url:

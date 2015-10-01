@@ -61,7 +61,7 @@ Rename the file `config/application.yml.example` to `config/application.yml` and
 # I prefilled this for you, but change them according to your needs.
 APP_NAME: 'Rails Boilerplate'
 APP_DOMAIN: 'rails-boilerplate.dev'
-DEVISE_MAILER: 'rails.boilerplate@example.com'
+DEVISE_MAIL_SENDER: 'rails.boilerplate@example.com'
 REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
 ```
 
