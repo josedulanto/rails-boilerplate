@@ -18,7 +18,8 @@
 coffeescript_options = {
   input: 'app/assets/javascripts',
   output: 'app/assets/javascripts',
-  patterns: [%r{^app/assets/javascripts/(.+\.(?:coffee|coffee\.md|litcoffee))$}]
+  patterns: [%r{^app/assets/javascripts/(.+\.(?:coffee|coffee\.md|litcoffee))$}],
+  noop: true
 }
 
 guard 'coffeescript', coffeescript_options do
