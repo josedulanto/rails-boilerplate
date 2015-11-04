@@ -12,7 +12,7 @@ BowerRails.configure do |bower_rails|
   bower_rails.clean_before_precompile = true
 
   # Excludes specific bower components from clean. Defaults to nil
-  bower_rails.exclude_from_clean = ['moment']
+  # bower_rails.exclude_from_clean = ['moment']
 
   # Invokes rake bower:install:deployment instead of rake bower:install. Defaults to false
   bower_rails.use_bower_install_deployment = true
