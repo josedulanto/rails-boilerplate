@@ -1,0 +1,7 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "semantic-ui": "latest",
+    "jquery": "latest"
+  }
+}
