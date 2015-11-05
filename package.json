@@ -1,0 +1,11 @@
+{
+  "name": "rails-boilerplate",
+  "version": "1.0.0",
+  "dependencies": {
+    "bower": "1.6.5"
+  },
+  "engine": {
+    "node": "5.0.0",
+    "npm": "3.3.10"
+  }
+}
