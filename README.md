@@ -1,5 +1,6 @@
 Rails Boilerplate
 ===
+
 Basically I got tired of doing the same steps over and over again to bring a Rails project to life and that's why a Rails 4 Boilerplate like this was the way to go. The features included here suits my needs and I hope they suit yours too. This has a lot of room for improvement so feel free to ask me or better yet fork it, improve it and PR it ;)
 
 Includes:
@@ -31,8 +32,9 @@ You could skip this section but I wanted to show you some of the tools I use in 
 * [RVM](https://rvm.io/): A command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.
 * [LiveReload](http://livereload.com/): Monitors changes in the file system. As soon as you save a file, it is preprocessed as needed, and the browser is refreshed. If you use the Chrome browser then install the [LiveReload extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en).
 
-Instructions:
----
+Instructions
+===
+
 ### Clone
 
 Clone this project to your machine.
@@ -94,13 +96,13 @@ bundle exec rake db:setup
 
 ### Bower
 
-Fetch assets (Semtantic-UI) with Bower to your `vendor/assets/bower_components` folder with:
+We use bower to manage the CSS and Javascript assets (jQuery and Semantic-UI), if you want to add more assets to the project modify the `Bowerfile` file using [Ruby DSL syntax](https://github.com/42dev/bower-rails#ruby-dsl-configuration). To fetch those assets with Bower to your `vendor/assets/bower_components` folder run the following command:
 
 ```
 bundle exec rake bower:install
 ```
 
-To fix assets paths within Bower packages so they work with the Rails Assets Pipeline run:
+Now we need to tell the bower-rails gem to fix the paths within the fetched Bower packages so they work with the Rails Assets Pipeline.
 
 ```
 bundle exec rake bower:resolve
@@ -116,8 +118,53 @@ Welcome to your rails application.
 
 In another console/terminal run Guard with `bundle exec guard` and if you installed the LiveReload Chrome extension then hit the `Enable LiveReload` button (you should have it in your toolbar next to the URL bar).
 
-ToDo:
+DEPLOYMENT
+===
+
+Heroku
 ---
+Why Heroku? Because of its simplicity and ease of use. If you want to use another cloud service be sure to config the environment variables in `config/application.yml` according to your setup.
+
+### Add-ons
+
+You should add the PostgreSQL, Redis and SendGrid add-ons to the rails-boilerplate application, all of them with FREE plans, so don't worry.
+
+```
+heroku addons:create heroku-postgresql:hobby-dev
+```
+
+```
+heroku addons:create heroku-redis:hobby-dev
+```
+
+```
+heroku addons:create sendgrid:starter
+```
+
+### Buildpacks (Ruby + Node)
+
+You remember we were using Bower to handle the front-end area of our application, right? So, Heroku doesn't know that and we have to tell it that our application uses both Ruby and NodeJS features. To do that you have to add two Heroku buildpacks:
+
+```
+heroku buildpacks:set https://github.com/heroku/heroku-buildpack-ruby.git
+```
+
+```
+heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-nodejs.git
+```
+
+NOTE: To read more about please refer to [Deploying Rails + Bower on Heroku](https://medium.com/for-the-public-benefit/deploying-rails-bower-on-heroku-3b4ca4908a59) article by Ellie Day in Medium. More buildpacks can be found at the [Heroku elements](https://elements.heroku.com/) page.
+
+Since we added environment variables to the file `config/application.yml` now we need to export those variables to Heroku using the following Figaro gem command:
+```
+figaro heroku:set -e production
+```
+You should be able to see the variables loaded in Heroku by executing the `heroku config` command.
+
+Finally push everything to Heroku with `git push heroku master`
+
+ToDo
+===
 * Authorization capabilities.
 * Server automation.
 * Some admin panel.
