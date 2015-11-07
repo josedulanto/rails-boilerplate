@@ -3,12 +3,19 @@
 # The name of your awesome app ;)
 APP_NAME: 'Rails Boilerplate'
 
+# SENDGRID
+####################
+# Look for this settings in heroku config by executing:
+# heroku config
+SENDGRID_USERNAME:
+SENDGRID_PASSWORD:
+
 # DEVISE
 ####################
 # Generate from console/terminal with the command 'bundle exec rake secret'
 DEVISE_SECRET_KEY:
 # the email to use in devise
-DEVISE_MAIL_SENDER: 'rails.boilerplate@example.com'
+DEVISE_MAILER_SENDER: 'rails.boilerplate@example.com'
 
 # DEVISE OMNIAUTH
 # When creating applications, use the callback url:
@@ -41,7 +48,7 @@ INSTAGRAM_APP_SECRET:
 ####################
 development: &development
   SECRET_KEY_BASE: # Generate from console/terminal with the command 'bundle exec rake secret'
-  REDIS_SERVER_URL: 'redis://localhost:6379/0/cache'
+  REDIS_URL: 'redis://localhost:6379/0/cache'
   APP_DOMAIN: 'rails-boilerplate.dev'
 
 # TEST ENV
@@ -51,7 +58,10 @@ test:
 
 # PRODUCTION ENV
 ####################
+# Look for some of this settings in heroku config by executing:
+# heroku config
 production:
   SECRET_KEY_BASE: # Generate from console/terminal with the command 'bundle exec rake secret'
-  REDIS_SERVER_URL:
+  REDIS_URL:
   APP_DOMAIN:
+  DATABASE_URL:
