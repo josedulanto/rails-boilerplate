@@ -1,0 +1,796 @@
+repo_name: josedulanto/rails-boilerplate
+report_id: 1515db4d9753ea39f966531f65e3bd1f
+repo_type: Public
+timestamp: '2023-11-09T16:27:50+00:00'
+requested_by: josedulanto
+provider: github
+branch: master
+detected_tools_count: 54
+tools:
+- name: CoffeeScript
+  description: A little language that compiles into JavaScript
+  website_url: http://coffeescript.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1178/slQydAMv.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: vendor/assets/bower.json
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-11-05 23:37:08.000000000 Z
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source: Repo Metadata
+- name: Rails
+  description: Web development that doesn't hurt
+  website_url: http://rubyonrails.org/
+  version: 4.2.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/990/x57_Lorv.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-25 21:07:15.000000000 Z
+- name: Semantic UI
+  description: A UI Component library implemented using a set of specifications designed
+    around natural language
+  website_url: http://semantic-ui.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/1106/semantic-ui.png
+  detection_source: vendor/assets/bower.json
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-11-05 23:37:08.000000000 Z
+- name: jQuery
+  description: The Write Less, Do More, JavaScript Library.
+  website_url: http://jquery.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg
+  detection_source: vendor/assets/bower.json
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: PostgreSQL
+  description: A powerful, open source object-relational database system
+  website_url: http://www.postgresql.org/
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1028/ASOhU5xJ.png
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: Redis
+  description: Open source (BSD licensed), in-memory data structure store
+  website_url: http://redis.io/
+  version: 3.2.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: In-Memory Databases
+  image_url: https://img.stackshare.io/service/1031/default_cbce472cd134adc6688572f999e9122b9657d4ba.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: Capybara
+  description: Acceptance test framework for web applications
+  website_url: http://jnicklas.github.io/capybara/
+  version: 2.4.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2595/capybara.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: LiveReload
+  description: CSS edits and image changes apply live. CoffeeScript, SASS, LESS and
+    others just work.
+  website_url: http://livereload.com
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Live Reloading
+  image_url: https://img.stackshare.io/service/2601/128.png
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: RSpec
+  description: Behaviour Driven Development for Ruby
+  website_url: https://rspec.info/
+  version: 3.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2539/logo.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: Rails Spring
+  description: Rails application preloader
+  website_url: https://github.com/rails/spring
+  version: 1.3.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Rails Testing
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-25 21:07:15.000000000 Z
+- name: RubyGems
+  description: Easily download, install, and use ruby software packages on your system
+  website_url: https://rubygems.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source: vendor/assets/bower.json
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-11-05 23:37:08.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: vendor/assets/bower.json
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-11-05 23:37:08.000000000 Z
+- name: Heroku
+  description: Build, deliver, monitor and scale web apps and APIs with a trail blazing
+    developer experience.
+  website_url: https://www.heroku.com
+  open_source: false
+  hosted_saas: true
+  category: Application Hosting
+  sub_category: Platform as a Service
+  image_url: https://img.stackshare.io/service/133/3wgIDj3j.png
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: Twilio SendGrid
+  description: Email Delivery. Simplified.
+  website_url: http://sendgrid.com
+  open_source: false
+  hosted_saas: true
+  category: Communications
+  sub_category: Transactional Email
+  image_url: https://img.stackshare.io/service/43/kQ_6nwmP.jpg
+  detection_source: config/environments/production.rb
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: Devise
+  description: Flexible authentication solution for Rails with Warden
+  website_url: https://github.com/plataformatec/devise
+  version: 3.5.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: User Management and Authentication
+  image_url: https://img.stackshare.io/service/1432/devise.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-24 17:52:35.000000000 Z
+- name: OmniAuth
+  description: OmniAuth is a flexible authentication system utilizing Rack middleware.
+  website_url: https://github.com/intridea/omniauth
+  version: 1.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: User Management and Authentication
+  image_url: https://img.stackshare.io/service/1433/omniauth.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: Simple Form
+  description: Forms made easy for Rails! It's tied to a simple DSL, with no opinion
+    on markup
+  website_url: https://github.com/plataformatec/simple_form
+  version: 3.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Web Forms
+  image_url: https://img.stackshare.io/service/4124/simple1.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: UglifyJS
+  description: A JavaScript parser, minifier, compressor and beautifier toolkit.
+  website_url: http://lisperator.net/uglifyjs/
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2203/default_9058af6f02375a99f634f537d727e32df92ac262.png
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: better_errors
+  description: Provides a better error page for Rails and other Rack apps
+  package_url: https://rubygems.org/better_errors
+  version: 2.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19224/default_90da4313847baa579409c050c1ebb8de5a6e0fbc.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-24 17:52:35.000000000 Z
+  vulnerabilities:
+  - name: Older releases of better_errors open to Cross-Site Request Forgery attack
+    cve_id: CVE-2021-39197
+    cve_url: https://github.com/advisories/GHSA-w3j4-76qw-wwjm
+    detected_date: Sep 8
+    severity: moderate
+    first_patched: 2.8.0
+- name: binding_of_caller
+  description: Retrieve the binding of a method's caller
+  package_url: https://rubygems.org/binding_of_caller
+  version: 0.7.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19104/default_fca7ffebc4c078263714788a3e4853bf74bde297.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: coffee-rails
+  description: CoffeeScript adapter for the Rails asset pipeline
+  package_url: https://rubygems.org/coffee-rails
+  version: 4.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18896/default_9386886dd1c6c396a11bd4b49732afb9ec444f8d.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-25 21:07:15.000000000 Z
+- name: country_select
+  description: Provides a simple helper to get an HTML select list of countries
+  package_url: https://rubygems.org/country_select
+  version: 2.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19577/default_b14c7692f93406b7d3cf015c5984e242b004f8a6.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: database_cleaner
+  description: Strategies for cleaning databases
+  package_url: https://rubygems.org/database_cleaner
+  version: 1.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18854/default_09811c2c16af4754129f39ba1dab0d23ca3d2476.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: factory_girl_rails
+  description: Factory_girl_rails provides integration between factory_girl and rails
+    3 or newer
+  package_url: https://rubygems.org/factory_girl_rails
+  version: 4.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18885/default_2ee21c0657d6b4f7c9a25f371c4eb30f678e82bb.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-25 21:07:15.000000000 Z
+- name: faker
+  description: Faker
+  package_url: https://rubygems.org/faker
+  version: 1.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18897/default_31c6044490fb5c1bec1388b8ceb466b6ac78ae92.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: figaro
+  description: Simple
+  package_url: https://rubygems.org/figaro
+  version: 1.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19607/default_ad0710c65b106932707389deb3b2e0b93a1ef7b6.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: guard
+  description: Guard is a command line tool to easily handle events on file system
+    modifications
+  package_url: https://rubygems.org/guard
+  version: 2.13.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18840/default_1d2091bec60de04a519a030cf3cb21ea7f86b28a.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: guard-livereload
+  description: Guard::LiveReload automatically reloads your browser when 'view' files
+    are modified
+  package_url: https://rubygems.org/guard-livereload
+  version: 2.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19445/default_e747a715ce0379afdb68c78657d70e4a512bf5f4.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: guard-rspec
+  description: Guard::RSpec automatically run your specs
+  package_url: https://rubygems.org/guard-rspec
+  version: 4.6.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18831/default_8c2fa81d8b8e48c679685199823ce30d598d3e87.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: jbuilder
+  description: Create JSON structures via a Builder-style DSL
+  package_url: https://rubygems.org/jbuilder
+  version: 2.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19105/default_fca7ffebc4c078263714788a3e4853bf74bde297.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: jquery-rails
+  description: This gem provides jQuery and the jQuery-ujs driver for your Rails 4+
+    application
+  package_url: https://rubygems.org/jquery-rails
+  version: 4.0.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18864/default_96cb61a9c0f8ef41b80df83209dca4f4c229184e.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-25 21:07:15.000000000 Z
+  vulnerabilities:
+  - name: jQuery Cross Site Scripting vulnerability
+    cve_id: CVE-2020-23064
+    cve_url: https://github.com/advisories/GHSA-257q-pv89-v3xv
+    detected_date: Jul 8
+    severity: moderate
+    first_patched: 4.4.0
+  - name: Cross-Site Scripting (XSS) in jquery
+    cve_id: CVE-2015-9251
+    cve_url: https://github.com/advisories/GHSA-rmxg-73gg-4p98
+    detected_date: Jul 6
+    severity: moderate
+    first_patched: 4.2.0
+  - name: XSS in jQuery as used in Drupal, Backdrop CMS, and other products
+    cve_id: CVE-2019-11358
+    cve_url: https://github.com/advisories/GHSA-6c3j-c64m-qhgq
+    detected_date: May 31
+    severity: moderate
+    first_patched: 4.3.4
+  - name: Potential XSS vulnerability in jQuery
+    cve_id: CVE-2020-11022
+    cve_url: https://github.com/advisories/GHSA-gxr4-xjj5-5px2
+    detected_date: Sep 26
+    severity: moderate
+    first_patched: 4.4.0
+  - name: Potential XSS vulnerability in jQuery
+    cve_id: CVE-2020-11023
+    cve_url: https://github.com/advisories/GHSA-jpcq-cgw6-v4j6
+    detected_date: May 5
+    severity: moderate
+    first_patched: 4.4.0
+- name: launchy
+  description: Launchy is helper class for launching cross-platform applications in
+    a fire and forget manner
+  package_url: https://rubygems.org/launchy
+  version: 2.4.3
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18893/default_421783d7f975d1b076f260bea1d42f0b2621ca39.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: omniauth-facebook
+  description: Facebook OAuth2 Strategy for OmniAuth
+  package_url: https://rubygems.org/omniauth-facebook
+  version: 2.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19539/default_218dae89c7df5d5855caf68241b819cfe024f92e.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-24 17:52:35.000000000 Z
+- name: omniauth-twitter
+  description: OmniAuth strategy for Twitter
+  package_url: https://rubygems.org/omniauth-twitter
+  version: 1.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19712/default_aeaa8b24dd36f8e334bb5b9c0baaee88c37e0037.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-24 17:52:35.000000000 Z
+- name: pg
+  description: Pg is the Ruby interface to the {PostgreSQL RDBMS}[http://www.postgresql.org/]
+  package_url: https://rubygems.org/pg
+  version: 0.18.2
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18855/default_d343d9a7c573fa5dcbeb4d3c43d2ffe4afa82cc1.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: poltergeist
+  description: Poltergeist is a driver for Capybara that allows you to run your tests
+    on a headless WebKit browser
+  package_url: https://rubygems.org/poltergeist
+  version: 1.6.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18952/default_026d30b21bca5e0a8e1755b462b565cf0847a762.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: pry-rails
+  description: Use Pry as your rails console
+  package_url: https://rubygems.org/pry-rails
+  version: 0.3.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19013/default_3667c8b28d9ec2ad93884ef523ec8f357774f78e.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-25 21:07:15.000000000 Z
+- name: quiet_assets
+  description: Quiet Assets turns off Rails asset pipeline log
+  package_url: https://rubygems.org/quiet_assets
+  version: 1.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19540/default_218dae89c7df5d5855caf68241b819cfe024f92e.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: rspec-collection_matchers
+  description: Collection cardinality matchers
+  package_url: https://rubygems.org/rspec-collection_matchers
+  version: 1.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19021/default_507eef785a48577c5983d32818431fef23fc4e87.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-24 17:52:35.000000000 Z
+- name: rspec-rails
+  description: Rspec-rails is a testing framework for Rails 3+
+  package_url: https://rubygems.org/rspec-rails
+  version: 3.3.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18830/default_ba8d7756589e5fc0164687950e3f091b32554546.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-25 21:07:15.000000000 Z
+- name: sass-rails
+  description: Sass adapter for the Rails asset pipeline
+  package_url: https://rubygems.org/sass-rails
+  version: 5.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18876/default_d416e715a80ce80ae31b87cff032f5873c8a9d2a.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-25 21:07:15.000000000 Z
+- name: sdoc
+  description: Rdoc generator html with javascript search index
+  package_url: https://rubygems.org/sdoc
+  version: 0.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19261/default_4ed5689ec4d74680b66320d503f54e39a95d4848.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: selenium-webdriver
+  description: WebDriver is a tool for writing automated tests of websites
+  package_url: https://rubygems.org/selenium-webdriver
+  version: 2.47.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18901/default_f0ad2b1ffbe10fdd866f9f8e5f812599d9e8085b.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: shoulda
+  description: Making tests easy on the fingers and eyes
+  package_url: https://rubygems.org/shoulda
+  version: 3.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18837/default_669e0ebb464c584b580cfec09e646fddff70c02a.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: shoulda-matchers
+  description: Shoulda Matchers provides RSpec- and Minitest-compatible one-liners
+    to test common Rails functionality that
+  package_url: https://rubygems.org/shoulda-matchers
+  version: 2.8.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18912/default_f78521c51e3a38a8810251cfa8909b18ae0b40a8.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: simple_form
+  description: Forms made easy!
+  package_url: https://rubygems.org/simple_form
+  version: 3.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18988/default_c2edad6777219a9d77730c33c0ffc3c4598d107f.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+  vulnerabilities:
+  - name: Improper Input Validation in simple_form
+    cve_id: CVE-2019-16676
+    cve_url: https://github.com/advisories/GHSA-r74q-gxcg-73hx
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 5.0.0
+- name: slim-rails
+  description: Provides the generator settings required for Rails 3+ to use Slim
+  package_url: https://rubygems.org/slim-rails
+  version: 3.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19238/default_c4ed1d3f735f11415ee5d02b5a5ba48490465220.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-25 21:07:15.000000000 Z
+- name: spring
+  description: Preloads your application so things like console
+  package_url: https://rubygems.org/spring
+  version: 1.3.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19382/default_b8d34ca81aebc76c0b551b666a1d21df7e697544.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+- name: turbolinks
+  description: Rails engine for Turbolinks 5 support
+  package_url: https://rubygems.org/turbolinks
+  version: 2.5.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19167/default_f74adb1c8d95c3268ea94f5ba9bbb60a0bc900ed.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-24 17:52:35.000000000 Z
+- name: uglifier
+  description: Uglifier minifies JavaScript files by wrapping UglifyJS to be accessible
+    in Ruby
+  package_url: https://rubygems.org/uglifier
+  version: 2.7.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18967/default_20d16c1471b93397c8ef93b19baf0989f59663c0.png
+  detection_source_url: Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-09-13 22:05:00.000000000 Z
+  vulnerabilities:
+  - name: Incorrect Handling of Non-Boolean Comparisons During Minification in uglify-js
+    cve_id: CVE-2015-8857
+    cve_url: https://github.com/advisories/GHSA-34r7-q49f-h37c
+    detected_date: Mar 28
+    severity: critical
+    first_patched: 2.7.2
+- name: bower
+  description: The browser package manager
+  package_url: https://www.npmjs.com/bower
+  version: 1.6.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16205/default_b4f5b6f31c5ab1ffee4bacf20842cd41a8f2658d.png
+  detection_source_url: package.json
+  detection_source: package.json
+  last_updated_by: José Dulanto
+  last_updated_on: 2015-11-05 23:28:41.000000000 Z
+  vulnerabilities:
+  - name: Symlink Arbitrary File Overwrite in bower
+    cve_id: CVE-2019-5484
+    cve_url: https://github.com/advisories/GHSA-p6mr-pxg4-68hx
+    detected_date: Aug 22
+    severity: high
+    first_patched: 1.8.8
