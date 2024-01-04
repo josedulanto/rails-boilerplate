@@ -1,7 +1,8 @@
 repo_name: josedulanto/rails-boilerplate
 report_id: 1515db4d9753ea39f966531f65e3bd1f
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-09T16:27:50+00:00'
+timestamp: '2024-01-04T15:01:51+00:00'
 requested_by: josedulanto
 provider: github
 branch: master
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1178/slQydAMv.png
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -26,6 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/vendor/assets/bower.json
   detection_source: vendor/assets/bower.json
   last_updated_by: José Dulanto
   last_updated_on: 2015-11-05 23:37:08.000000000 Z
@@ -38,6 +41,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate
   detection_source: Repo Metadata
 - name: Rails
   description: Web development that doesn't hurt
@@ -49,7 +53,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/990/x57_Lorv.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-25 21:07:15.000000000 Z
@@ -63,6 +67,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Front-End Frameworks
   image_url: https://img.stackshare.io/service/1106/semantic-ui.png
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/vendor/assets/bower.json
   detection_source: vendor/assets/bower.json
   last_updated_by: José Dulanto
   last_updated_on: 2015-11-05 23:37:08.000000000 Z
@@ -75,7 +80,8 @@ tools:
   category: Libraries
   sub_category: Javascript UI Libraries
   image_url: https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg
-  detection_source: vendor/assets/bower.json
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile
+  detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
 - name: PostgreSQL
@@ -86,6 +92,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1028/ASOhU5xJ.png
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -99,7 +106,7 @@ tools:
   category: Data Stores
   sub_category: In-Memory Databases
   image_url: https://img.stackshare.io/service/1031/default_cbce472cd134adc6688572f999e9122b9657d4ba.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -113,7 +120,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/2595/capybara.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -125,6 +132,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate
   detection_source: Repo Metadata
 - name: LiveReload
   description: CSS edits and image changes apply live. CoffeeScript, SASS, LESS and
@@ -135,6 +143,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Live Reloading
   image_url: https://img.stackshare.io/service/2601/128.png
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -148,7 +157,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/2539/logo.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -162,7 +171,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Rails Testing
   image_url: https://img.stackshare.io/no-img-open-source.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-25 21:07:15.000000000 Z
@@ -174,6 +183,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/vendor/assets/bower.json
   detection_source: vendor/assets/bower.json
   last_updated_by: José Dulanto
   last_updated_on: 2015-11-05 23:37:08.000000000 Z
@@ -185,6 +195,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/vendor/assets/bower.json
   detection_source: vendor/assets/bower.json
   last_updated_by: José Dulanto
   last_updated_on: 2015-11-05 23:37:08.000000000 Z
@@ -197,6 +208,7 @@ tools:
   category: Application Hosting
   sub_category: Platform as a Service
   image_url: https://img.stackshare.io/service/133/3wgIDj3j.png
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -208,6 +220,7 @@ tools:
   category: Communications
   sub_category: Transactional Email
   image_url: https://img.stackshare.io/service/43/kQ_6nwmP.jpg
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/config/environments/production.rb
   detection_source: config/environments/production.rb
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -221,7 +234,7 @@ tools:
   category: Application Utilities
   sub_category: User Management and Authentication
   image_url: https://img.stackshare.io/service/1432/devise.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-24 17:52:35.000000000 Z
@@ -235,7 +248,7 @@ tools:
   category: Application Utilities
   sub_category: User Management and Authentication
   image_url: https://img.stackshare.io/service/1433/omniauth.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -250,7 +263,7 @@ tools:
   category: Application Utilities
   sub_category: Web Forms
   image_url: https://img.stackshare.io/service/4124/simple1.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -262,6 +275,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/2203/default_9058af6f02375a99f634f537d727e32df92ac262.png
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -275,7 +289,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19224/default_90da4313847baa579409c050c1ebb8de5a6e0fbc.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-24 17:52:35.000000000 Z
@@ -296,7 +310,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19104/default_fca7ffebc4c078263714788a3e4853bf74bde297.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -310,7 +324,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18896/default_9386886dd1c6c396a11bd4b49732afb9ec444f8d.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-25 21:07:15.000000000 Z
@@ -324,7 +338,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19577/default_b14c7692f93406b7d3cf015c5984e242b004f8a6.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -338,7 +352,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18854/default_09811c2c16af4754129f39ba1dab0d23ca3d2476.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -353,7 +367,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18885/default_2ee21c0657d6b4f7c9a25f371c4eb30f678e82bb.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-25 21:07:15.000000000 Z
@@ -367,7 +381,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18897/default_31c6044490fb5c1bec1388b8ceb466b6ac78ae92.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -381,7 +395,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19607/default_ad0710c65b106932707389deb3b2e0b93a1ef7b6.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -396,7 +410,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18840/default_1d2091bec60de04a519a030cf3cb21ea7f86b28a.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -411,7 +425,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19445/default_e747a715ce0379afdb68c78657d70e4a512bf5f4.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -425,7 +439,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18831/default_8c2fa81d8b8e48c679685199823ce30d598d3e87.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -439,7 +453,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19105/default_fca7ffebc4c078263714788a3e4853bf74bde297.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -454,7 +468,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18864/default_96cb61a9c0f8ef41b80df83209dca4f4c229184e.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-25 21:07:15.000000000 Z
@@ -500,7 +514,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18893/default_421783d7f975d1b076f260bea1d42f0b2621ca39.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -514,7 +528,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19539/default_218dae89c7df5d5855caf68241b819cfe024f92e.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-24 17:52:35.000000000 Z
@@ -528,7 +542,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19712/default_aeaa8b24dd36f8e334bb5b9c0baaee88c37e0037.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-24 17:52:35.000000000 Z
@@ -542,7 +556,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18855/default_d343d9a7c573fa5dcbeb4d3c43d2ffe4afa82cc1.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -557,7 +571,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18952/default_026d30b21bca5e0a8e1755b462b565cf0847a762.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -571,7 +585,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19013/default_3667c8b28d9ec2ad93884ef523ec8f357774f78e.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-25 21:07:15.000000000 Z
@@ -585,7 +599,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19540/default_218dae89c7df5d5855caf68241b819cfe024f92e.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -599,7 +613,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19021/default_507eef785a48577c5983d32818431fef23fc4e87.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-24 17:52:35.000000000 Z
@@ -613,7 +627,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18830/default_ba8d7756589e5fc0164687950e3f091b32554546.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-25 21:07:15.000000000 Z
@@ -627,7 +641,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18876/default_d416e715a80ce80ae31b87cff032f5873c8a9d2a.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-25 21:07:15.000000000 Z
@@ -641,7 +655,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19261/default_4ed5689ec4d74680b66320d503f54e39a95d4848.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -655,7 +669,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18901/default_f0ad2b1ffbe10fdd866f9f8e5f812599d9e8085b.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -669,7 +683,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18837/default_669e0ebb464c584b580cfec09e646fddff70c02a.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -684,7 +698,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18912/default_f78521c51e3a38a8810251cfa8909b18ae0b40a8.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -698,7 +712,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18988/default_c2edad6777219a9d77730c33c0ffc3c4598d107f.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -719,7 +733,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19238/default_c4ed1d3f735f11415ee5d02b5a5ba48490465220.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-25 21:07:15.000000000 Z
@@ -733,7 +747,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19382/default_b8d34ca81aebc76c0b551b666a1d21df7e697544.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -747,7 +761,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/19167/default_f74adb1c8d95c3268ea94f5ba9bbb60a0bc900ed.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-24 17:52:35.000000000 Z
@@ -762,7 +776,7 @@ tools:
   category: Libraries
   sub_category: RubyGems Packages
   image_url: https://img.stackshare.io/package/18967/default_20d16c1471b93397c8ef93b19baf0989f59663c0.png
-  detection_source_url: Gemfile.lock
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/Gemfile.lock
   detection_source: Gemfile
   last_updated_by: José Dulanto
   last_updated_on: 2015-09-13 22:05:00.000000000 Z
@@ -783,7 +797,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16205/default_b4f5b6f31c5ab1ffee4bacf20842cd41a8f2658d.png
-  detection_source_url: package.json
+  detection_source_url: https://github.com/josedulanto/rails-boilerplate/blob/master/package.json
   detection_source: package.json
   last_updated_by: José Dulanto
   last_updated_on: 2015-11-05 23:28:41.000000000 Z
